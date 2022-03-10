@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+</head>
+<body class="CuerpoDecontacto">
+    <div>
+        <header>
+            <div><h1 class="TituloDeInicio">Venus Joyas</h1></div>
+            <div class="Menu"><h2>Joyas en Acero quirúrgico</h2></div>
+            <hr>
+                <ul>
+                    <li class="Menu"><a class="Menu" style="text-decoration: none;" href="../index.html">Inicio</a></li>
+                        <li class="Menu"><a class="Menu" style="text-decoration: none;" href="productos.html">Productos</a></li>
+                        <li class="Menu"><a class="Menu" style="text-decoration: none;" href="comocomprar.html">Como comprar</a></li>
+                        <li class="Menu"><a class="Menu" style="text-decoration: none;" href="contacto.html">Contacto</a></li>
+                </ul>
+        <h1>
+            Formulario de contacto
+        </h1>
+    </header>
+    </div>
+    
+    <main>
+        <fieldset>
+            <legend>Formulario</legend>
+            <form  class="formulario" action="">
+                <div>
+                    <label for="nombre">Completa tu nombre</label>
+                    <input type="text" name="nombre">
+                </div><br>
+                <div>
+                    <label for="apellido">Completa tu apellido</label>
+                    <input type="text" name="apellido">
+                </div><br>
+                <div>
+                    <label for="email">Escribe tu email *</label>
+                    <input type="email" name="email" required>
+                </div><br>
+                <div>
+                    <label for="comentario">Escribe el asunto de tu email</label><br>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="pais">Elige tu pais</label>
+                    <select name="pais" id="">
+                        <option value="argentina">Argentina</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Colombia">Colombia</option>
+                    </select>
+                </div>
+            
+                <div>
+                    <input type="submit" value="ENVIAR">
+                </div>
+                <div>
+                    <input type="reset" value="BORRAR">
+                </div>
+
+
+
+
+
+
+            </form>
+        </fieldset>
+    </main>
+    <div class="footer">
+        <footer>
+            <b>Seguinos en las redes:<a style="text-decoration: none;" href="https://www.instagram.com/venus_jya/">Instagram</a></b><img src="../media/logoinstagram.png" class="logo" alt="iconoinstagram">
+            <b><a style="text-decoration: none;" href="https://www.facebook.com/profile.php?id=100072277805393">Facebook</a></b><img src="../media/iconofacebook.png" class="logo" alt="iconofacebook">
+        </footer>
+    </div>
+</body>
+
+</html>

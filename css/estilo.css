@@ -98,6 +98,12 @@ div .contenedor{
 .imagenDeInicio{
     width: 200px;
 }
+.foto{
+    max-width: 1000px;
+    max-height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
 ul li{
     display: inline-block;
     margin: 5px;
@@ -124,8 +130,8 @@ main fieldset form div{
 .textoDeinicio{
     font-size: 1rem;
     line-height: 2;
-    color: white;
-    background-color: #df4a68;
+    color: black;
+    background-image: linear-gradient(pink, white);
     margin-bottom: 20px;
     margin-left: 30px;
     margin-right: 30px;

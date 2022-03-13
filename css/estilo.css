@@ -96,13 +96,12 @@ div .contenedor{
     margin: 10px;
 }
 .imagenDeInicio{
-    width: 200px;
+    width: 100px;
 }
-.foto{
-    max-width: 1000px;
-    max-height: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+.carousel-inner
+.carousel-item{
+    height: 600px;
+
 }
 ul li{
     display: inline-block;
@@ -114,11 +113,12 @@ ul li{
     transition: 1s;
     color: #664ecf; 
 }
-.linkdeinicio{
+.nav-link{
     color: black;
+    margin: 30px; 
 }
-.linkdeinicio:hover{
-    color: #664ecf;
+.nav-link:hover{
+    color: #4c2dd3;
     transition: 1s;
 }
 main fieldset form div{
@@ -163,4 +163,17 @@ footer{
 }
 .card:hover{
     opacity: 1;
+}
+.container-fluid{
+    font-size: 2rem;
+}
+.cartas .card{
+    display: inline-block;
+}
+.dondecomprar{
+    margin: 50px;
+    padding: 50px;
+}
+.cuerpo{
+    background-color: #8368fc;
 }

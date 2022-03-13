@@ -12,31 +12,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
-<body>
+<body class="cuerpo">
     <div>
         <header>
             <div><h1 class="TituloDeInicio">Venus Joyas</h1></div>
             <div class="Menu"><h2>Joyas en Acero quirúrgico</h2></div>
             <hr>
-            <section>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                <img class="imagenDeInicio" src="../media/foto.png" width="30px" alt="Logo de Venus Joyas">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      <a class="nav-link" href="productos.html">Productos</a>
+                      <a class="nav-link" href="comocomprar.html">Como comprar</a>
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            <!-- <section>
                 <ul>
                     <li class="Menu"><a class="Menu" style="text-decoration: none;" href="../index.html">Inicio</a></li>
                     <li class="Menu"><a class="Menu" style="text-decoration: none;" href="productos.html">Productos</a></li>
                     <li class="Menu"><a class="Menu" style="text-decoration: none;" href="comocomprar.html">Como comprar</a></li>
                     <li class="Menu"><a class="Menu" style="text-decoration: none;" href="contacto.html">Contacto</a></li>
                 </ul>
-            </section>
+            </section>-->
         </header>
     </div>
-    <div>
+    <div class="dondecomprar animate__animated animate__backInDown">
         <h1>Podes Comprar por whatsapp:</h1>
     </div>
     <div>
         <h2>Te sugerimos buscar el producto en la pagina y mandarnos una captura, ya que es un medio mas personal y mas facil para ponernos en contacto</h2>
     </div>
     <div>
-        <img src="../media/comocomprar.jpg" alt="comocomprar">
+        <img class="animate__animated animate__zoomIn" src="../media/comocomprar.jpg" alt="comocomprar">
     </div>
     <div class="footer">
         <footer>

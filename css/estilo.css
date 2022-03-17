@@ -22,7 +22,7 @@ div .contenedor{
 .contenedor .section,
 .contenedor .footer{
     background: #fff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 4px;
 }
 .contenedor .header{
@@ -133,14 +133,12 @@ main fieldset form div{
     color: black;
     background-image: linear-gradient(pink, white);
     margin-bottom: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
     text-align: center;
 }
+
 footer{
-    font-size: 2em;  
-    margin: 30px 30px 30px 30px; 
-    background-image: url(../media/fotofondo2.jpg); 
+    font-size: 2em;
+    background-color: #12203e; 
 }
 .formulario{
     margin: 20px 30px 30px 30px;
@@ -163,6 +161,7 @@ footer{
 }
 .card:hover{
     opacity: 1;
+    transition: 1s;
 }
 .container-fluid{
     font-size: 2rem;
@@ -174,6 +173,7 @@ footer{
     margin: 50px;
     padding: 50px;
 }
-.cuerpo{
-    background-color: #8368fc;
+.btn{
+    color: #f9fbff;
+    background-color:#12203e;
 }

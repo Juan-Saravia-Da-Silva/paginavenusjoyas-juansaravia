@@ -183,3 +183,8 @@ footer {
       
     }
 }
+.carousel-item img{
+  max-width: 100%;
+  max-height: auto;
+  margin: 50px;
+}

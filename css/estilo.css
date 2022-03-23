@@ -9,17 +9,9 @@ div .contenedor {
   display: grid;
   grid-template-columns: repeat(3 1fr);
   grid-template-rows: repeat(4 auto);
-  grid-template-areas: "header header header"
- "nav nav nav"
- "article section section"
- "footer footer footer"; }
+  grid-template-areas: "header header header" "nav nav nav" "article section section" "footer footer footer"; }
 
-.contenedor > div,
-.contenedor .header,
-.contenedor .nav,
-.contenedor .article,
-.contenedor .section,
-.contenedor .footer {
+.contenedor > div, .contenedor .header, .contenedor .nav, .contenedor .article, .contenedor .section, .contenedor .footer {
   background: #fff;
   padding: 20px;
   border-radius: 4px; }
@@ -43,22 +35,13 @@ div .contenedor {
 
 @media screen and (max-width: 625px) {
   .contenedor {
-    grid-template-areas: "header header header"
- "nav nav nav"
- "section section section"
- "article article article"
- "footer footer footer"; } }
+    grid-template-areas: "header header header" "nav nav nav" "section section section" "article article article" "footer footer footer"; } }
 
 div .contenedor {
   display: grid;
   grid-template-columns: repeat(4 1fr);
   grid-template-rows: repeat(4 auto);
-  grid-template-areas: "header2 header2 header2"
- "Menu Menu Menu Menu"
- "section section"
- "section section"
- "fotos1 fotos1 fotos1"
- "footer footer"; }
+  grid-template-areas: "header2 header2 header2" "Menu Menu Menu Menu" "section section" "section section" "fotos1 fotos1 fotos1" "footer footer"; }
 
 .contenedor .header2 {
   grid-area: header2;
@@ -79,22 +62,16 @@ div .contenedor {
 
 @media screen and (max-width: 625px) {
   .contenedor {
-    grid-template-areas: "header2 header2"
- "Menu Menu"
- "section section"
- "fotos1 fotos1 fotos1"
- "footer footer footer"; } }
+    grid-template-areas: "header2 header2" "Menu Menu" "section section" "fotos1 fotos1 fotos1" "footer footer footer"; } }
 
-.Menu {
+header div .Menu {
   display: inline-block;
   margin: 10px; }
-
-.imagenDeInicio {
-  width: 100px; }
-
-.carousel-inner
-.carousel-item {
-  height: 600px; }
+  header div .Menu :hover {
+    transition: 1s;
+    color: #664ecf; }
+  header div .Menu .carousel-inner .carousel-item {
+    height: 600px; }
 
 ul li {
   display: inline-block;
@@ -102,17 +79,14 @@ ul li {
   padding: 30px;
   font-size: 1.5rem; }
 
-.Menu:hover {
-  transition: 1s;
-  color: #664ecf; }
-
 .nav-link {
   color: black;
   margin: 30px; }
-
-.nav-link:hover {
-  color: #4c2dd3;
-  transition: 1s; }
+  .nav-link:hover {
+    color: #4c2dd3;
+    transition: 1s; }
+  .nav-link .imagenDeInicio {
+    height: 200px; }
 
 main fieldset form div {
   text-align: center; }
@@ -133,29 +107,26 @@ main fieldset form div {
 footer {
   font-size: 2em;
   background-color: #12203e; }
+  footer .logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 30px; }
 
 .formulario {
   margin: 20px 30px 30px 30px; }
 
-.logo {
-  width: 50px;
-  height: 50px;
-  margin-top: 30px; }
-
 .card2 {
   display: inline-flex;
   opacity: 60%; }
-
-.card2:hover {
-  opacity: 1; }
+  .card2:hover {
+    opacity: 1; }
 
 .card {
   display: inline-block;
   opacity: 50%; }
-
-.card:hover {
-  opacity: 1;
-  transition: 1s; }
+  .card:hover {
+    opacity: 1;
+    transition: 1s; }
 
 .container-fluid {
   font-size: 2rem; }
@@ -170,21 +141,7 @@ footer {
 .btn {
   background-color: #12203e;
   border: none; }
-.lupa{
-  width: 40px;
-  height: 40px;;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 70%;
-}
-@media screen and (max-width: 625px) {
-    .lupa{
-      margin: auto;
-      
-    }
-}
-.carousel-item img{
-  max-width: 100%;
-  max-height: auto;
-  margin: 50px;
-}
+
+.lupa {
+  height: 40px;
+  width: 40px; }

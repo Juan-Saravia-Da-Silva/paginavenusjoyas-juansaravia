@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+div .contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3 1fr);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4 auto);
+      grid-template-areas: "header header header" "nav nav nav" "article section section" "footer footer footer";
+}
+
+.contenedor > div, .contenedor .header, .contenedor .nav, .contenedor .article, .contenedor .section, .contenedor .footer {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.contenedor .header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+}
+
+.contenedor .nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: nav;
+}
+
+.contenedor .article {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: article;
+}
+
+.contenedor .section {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: section;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenedor .footer {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  background-color: #12203e;
+}
+
+@media screen and (max-width: 625px) {
+  .contenedor {
+        grid-template-areas: "header header header" "nav nav nav" "section section section" "article article article" "footer footer footer";
+  }
+}
+
+div .contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4 1fr);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4 auto);
+      grid-template-areas: "header2 header2 header2" "Menu Menu Menu Menu" "section section" "section section" "fotos1 fotos1 fotos1" "footer footer";
+}
+
+.contenedor .header2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contenedor .Menu {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: Menu;
+}
+
+.contenedor .section {
+  grid-area: links;
+}
+
+.contenedor .fotos1 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: fotos1;
+}
+
+.contenedor .footer {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+}
+
+@media screen and (max-width: 625px) {
+  .contenedor {
+        grid-template-areas: "header2 header2" "Menu Menu" "section section" "fotos1 fotos1 fotos1" "footer footer footer";
+  }
+}
+
+header div .Menu {
+  display: inline-block;
+  margin: 10px;
+}
+
+header div .Menu :hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #664ecf;
+}
+
+header div .Menu .carousel-inner .carousel-item {
+  height: 600px;
+}
+
+ul li {
+  display: inline-block;
+  margin: 5px;
+  padding: 30px;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: black;
+  margin: 30px;
+}
+
+.nav-link:hover {
+  color: #4c2dd3;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.nav-link .imagenDeInicio {
+  height: 200px;
+}
+
+main fieldset form div {
+  text-align: center;
+}
+
+.navDeProductos section ul {
+  -webkit-text-decoration: solid white;
+          text-decoration: solid white;
+}
+
+.textoDeinicio {
+  font-size: 1rem;
+  line-height: 2;
+  color: black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(pink), to(white));
+  background-image: linear-gradient(pink, white);
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+footer {
+  font-size: 2em;
+  background-color: #12203e;
+}
+
+footer .logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+}
+
+.formulario {
+  margin: 20px 30px 30px 30px;
+}
+
+.card2 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  opacity: 60%;
+}
+
+.card2:hover {
+  opacity: 1;
+}
+
+.card {
+  display: inline-block;
+  opacity: 50%;
+}
+
+.card:hover {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.container-fluid {
+  font-size: 2rem;
+}
+
+.cartas .card {
+  display: inline-block;
+}
+
+.dondecomprar {
+  margin: 50px;
+  padding: 50px;
+}
+
+.btn {
+  background-color: #12203e;
+  border: none;
+}
+
+.lupa {
+  height: 40px;
+  width: 40px;
+}
+/*# sourceMappingURL=estilo.css.map */

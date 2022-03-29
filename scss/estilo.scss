@@ -46,38 +46,6 @@ $card-border-radius: 20%;
   @extend %card;
   background-color: #12203e; 
 }
-
-  
-  .contenedor {
-    .header2 {
-      grid-area: header2;
-      display: flex;
-      justify-content: flex-start;
-    }
-  
-    .Menu {
-      grid-area: Menu;
-    }
-  
-    .section {
-      grid-area: links;
-    }
-  
-    .fotos1 {
-      grid-area: fotos1;
-    }
-  
-    .footer {
-      grid-area: footer;
-    }
-  }
-  
-  @media screen and (max-width: 625px) {
-    .contenedor {
-      grid-template-areas: "header2 header2" "Menu Menu" "section section" "fotos1 fotos1 fotos1" "footer footer footer";
-    }
-  }
-  
   header div .Menu {
     display: inline-block;
     margin: 10px;

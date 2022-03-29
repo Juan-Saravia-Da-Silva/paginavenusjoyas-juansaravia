@@ -8,39 +8,6 @@
 .card {
   background-color: #12203e;
 }
-
-.contenedor .header2 {
-  grid-area: header2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.contenedor .Menu {
-  grid-area: Menu;
-}
-
-.contenedor .section {
-  grid-area: links;
-}
-
-.contenedor .fotos1 {
-  grid-area: fotos1;
-}
-
-.contenedor .footer {
-  grid-area: footer;
-}
-
-@media screen and (max-width: 625px) {
-  .contenedor {
-        grid-template-areas: "header2 header2" "Menu Menu" "section section" "fotos1 fotos1 fotos1" "footer footer footer";
-  }
-}
-
 header div .Menu {
   display: inline-block;
   margin: 10px;

@@ -1,60 +1,52 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
-    text-align: center;
+$breakpoints: (
+  mobile: 240px,
+  tablet: 600px,
+  desktop: 1024px,
+);
+@mixin breakpoint ($device) {
+    @if map-has-key($breakpoints, $device ){
+      @media (min-width: #{map-get ($breakpoints, $device)} ){
+        @content;
+      }
+    }
+}
+@mixin tablet {
+  @media only screen and (min-width: 768px) {
+    @content;
   }
-  
-  div .contenedor {
-    display: grid;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: repeat(4 auto);
-    grid-template-areas: "header header header" "nav nav nav" "article section section" "footer footer footer";
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 992px) {
+    @content;
   }
-  
-  .contenedor {
-    > div, .header, .nav, .article, .section, .footer {
-      background: #fff;
-      padding: 20px;
-      border-radius: 4px;
-    }
-  
-    .header {
-      grid-area: header;
-    }
-  
-    .nav {
-      grid-area: nav;
-    }
-  
-    .article {
-      grid-area: article;
-    }
-  
-    .section {
-      grid-area: section;
-      display: flex;
-    }
-  
-    .footer {
-      grid-area: footer;
-      background-color: #12203e;
-    }
+}
+
+@mixin large {
+  @media only screen and (min-width: 1200px) {
+    @content;
   }
-  
-  @media screen and (max-width: 625px) {
-    .contenedor {
-      grid-template-areas: "header header header" "nav nav nav" "section section section" "article article article" "footer footer footer";
-    }
-  }
-  
-  div .contenedor {
-    display: grid;
-    grid-template-columns: repeat(4 1fr);
-    grid-template-rows: repeat(4 auto);
-    grid-template-areas: "header2 header2 header2" "Menu Menu Menu Menu" "section section" "section section" "fotos1 fotos1 fotos1" "footer footer";
-  }
+}
+
+//variables
+$card-bg: white;
+$card-border-color:  black;
+$card-border-radius: 20%;
+
+
+//extend
+%card{
+  width: 400px;
+  text-align: center;
+  padding: 5px;
+  margin: 2px auto;
+}
+
+.card {
+  @extend %card;
+  background-color: #12203e; 
+}
+
   
   .contenedor {
     .header2 {

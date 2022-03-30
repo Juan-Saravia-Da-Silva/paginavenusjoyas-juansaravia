@@ -4,9 +4,41 @@
 @import "./footer";
 @import "./resposive";
 
+ul{
+  li{
+    display: inline-block;
+    margin: 5px;
+    padding: 30px;
+    font-size: 1.5rem;
+  }
+}
+.nav-link{
+    color: black;
+    margin: 30px;
+    :hover{
+      color: #4c2dd3;
+      transition: 1s;
+    }
+}
+article{
+  div{
+    p{
+      font-size: 1rem;
+      line-height: 2;
+      color: black;
+      background-image: linear-gradient(pink, white);
+      margin-bottom: 20px;
+      margin-left: 30px;
+      margin-right: 30px;
+      text-align: center;
+    }
+  }
+}
 .card {
   @extend %card;
   background-color: #12203e; 
+  color: antiquewhite;
+  height: 200rem;
 }
   .navDeProductos section ul {
     text-decoration: solid white;

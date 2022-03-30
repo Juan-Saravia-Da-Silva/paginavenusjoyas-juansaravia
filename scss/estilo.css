@@ -1,6 +1,105 @@
-@import url(./_variables.scss);
-@import url(./_cuerpo.scss);
-@import url(./_footer.scss);
+header div .Menu {
+  display: inline-block;
+  margin: 10px;
+}
+
+header div .Menu :hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #664ecf;
+}
+
+header div .Menu .carousel-inner .carousel-item {
+  height: 600px;
+}
+
+header div .Menu {
+  display: inline-block;
+  margin: 10px;
+}
+
+header div .Menu :hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #664ecf;
+}
+
+header div .Menu .carousel-inner .carousel-item {
+  height: 600px;
+}
+
+ul li {
+  display: inline-block;
+  margin: 5px;
+  padding: 30px;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: black;
+  margin: 30px;
+}
+
+.nav-link:hover {
+  color: #4c2dd3;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.nav-link .imagenDeInicio {
+  height: 200px;
+}
+
+main fieldset form div {
+  text-align: center;
+}
+
+.textoDeinicio {
+  font-size: 1rem;
+  line-height: 2;
+  color: black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(pink), to(white));
+  background-image: linear-gradient(pink, white);
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  opacity: 50%;
+}
+
+.card:hover {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.container-fluid {
+  font-size: 2rem;
+}
+
+.cartas .card {
+  display: inline-block;
+}
+
+footer {
+  font-size: 2em;
+  background-color: #12203e;
+}
+
+footer a {
+  color: white;
+}
+
+footer .logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+}
+
 .card {
   width: 400px;
   text-align: center;

@@ -1,7 +1,9 @@
-@import url(./_variables.scss);
-@import url(./_cuerpo.scss);
-@import url(./_footer.scss);
-@import url(./_resposive.scss);
+@import "./variables";
+@import "./header";
+@import "./cuerpo";
+@import "./footer";
+@import "./resposive";
+
 .card {
   @extend %card;
   background-color: #12203e; 

@@ -1,0 +1,17 @@
+header{
+    div{
+        .Menu{
+            display: inline-block;
+            margin: 10px;
+            :hover{
+                transition: 1s;
+                color: #664ecf;
+            }
+            .carousel-inner{
+                .carousel-item{
+                    height: 600px;
+                }
+            }
+        }
+    }
+}

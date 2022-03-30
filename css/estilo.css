@@ -1,3 +1,6 @@
+@import url(./_variables.scss);
+@import url(./_cuerpo.scss);
+@import url(./_footer.scss);
 * {
   margin: 0;
   padding: 0;
@@ -5,73 +8,6 @@
   font-family: 'Playfair Display', serif;
   text-align: center; }
 
-div .contenedor {
-  display: grid;
-  grid-template-columns: repeat(3 1fr);
-  grid-template-rows: repeat(4 auto);
-  grid-template-areas: "header header header" "nav nav nav" "article section section" "footer footer footer"; }
-
-.contenedor > div, .contenedor .header, .contenedor .nav, .contenedor .article, .contenedor .section, .contenedor .footer {
-  background: #fff;
-  padding: 20px;
-  border-radius: 4px; }
-
-.contenedor .header {
-  grid-area: header; }
-
-.contenedor .nav {
-  grid-area: nav; }
-
-.contenedor .article {
-  grid-area: article; }
-
-.contenedor .section {
-  grid-area: section;
-  display: flex; }
-
-.contenedor .footer {
-  grid-area: footer;
-  background-color: #12203e; }
-
-@media screen and (max-width: 625px) {
-  .contenedor {
-    grid-template-areas: "header header header" "nav nav nav" "section section section" "article article article" "footer footer footer"; } }
-
-div .contenedor {
-  display: grid;
-  grid-template-columns: repeat(4 1fr);
-  grid-template-rows: repeat(4 auto);
-  grid-template-areas: "header2 header2 header2" "Menu Menu Menu Menu" "section section" "section section" "fotos1 fotos1 fotos1" "footer footer"; }
-
-.contenedor .header2 {
-  grid-area: header2;
-  display: flex;
-  justify-content: flex-start; }
-
-.contenedor .Menu {
-  grid-area: Menu; }
-
-.contenedor .section {
-  grid-area: links; }
-
-.contenedor .fotos1 {
-  grid-area: fotos1; }
-
-.contenedor .footer {
-  grid-area: footer; }
-
-@media screen and (max-width: 625px) {
-  .contenedor {
-    grid-template-areas: "header2 header2" "Menu Menu" "section section" "fotos1 fotos1 fotos1" "footer footer footer"; } }
-
-header div .Menu {
-  display: inline-block;
-  margin: 10px; }
-  header div .Menu :hover {
-    transition: 1s;
-    color: #664ecf; }
-  header div .Menu .carousel-inner .carousel-item {
-    height: 600px; }
 
 ul li {
   display: inline-block;

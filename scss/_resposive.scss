@@ -1,0 +1,37 @@
+%card{
+    width: 400px;
+    text-align: center;
+    padding: 5px;
+    margin: 2px auto;
+  }
+  $breakpoints: (
+    mobile: 240px,
+    tablet: 600px,
+    desktop: 1024px,
+  );
+  
+  
+  @mixin breakpoint ($device) {
+      @if map-has-key($breakpoints, $device ){
+        @media (min-width: #{map-get ($breakpoints, $device)} ){
+          @content;
+        }
+      }
+  }
+  @mixin tablet {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  }
+  
+  @mixin large {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }

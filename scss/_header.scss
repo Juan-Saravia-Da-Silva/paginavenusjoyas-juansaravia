@@ -1,17 +1,61 @@
-header{
-    div{
-        .Menu{
-            display: inline-block;
-            margin: 10px;
-            :hover{
-                transition: 1s;
-                color: #664ecf;
-            }
-            .carousel-inner{
-                .carousel-item{
-                    height: 600px;
-                }
-            }
-        }
-    }
+header {
+	div {
+		.Menu {
+			display: inline-block;
+			margin: 10px;
+			display: inline-block;
+			margin: 10px;
+			&:hover {
+				-webkit-transition: 1s;
+				transition: 1s;
+				color: $color_1;
+				-webkit-transition: 1s;
+				transition: 1s;
+				color: $color_1;
+			}
+			.carousel-inner {
+				.carousel-item {
+					height: 600px;
+					height: 600px;
+				}
+			}
+		}
+	}
+}
+ul {
+	li {
+		display: inline-block;
+		margin: 5px;
+		padding: 30px;
+		font-size: 1.5rem;
+		display: inline-block;
+		margin: 5px;
+		padding: 30px;
+		font-size: 1.5rem;
+	}
+}
+.nav-link {
+	color: $color_2;
+	margin: 30px;
+	color: $color_2;
+	margin: 30px;
+	&:hover {
+		color: $color_3;
+		-webkit-transition: 1s;
+		transition: 1s;
+		color: $color_3;
+		-webkit-transition: 1s;
+		transition: 1s;
+	}
+	.imagenDeInicio {
+		height: 200px;
+	}
+}
+.btn {
+	background-color: $background-color_1;
+	border: none;
+}
+.lupa {
+	height: 40px;
+	width: 40px;
 }

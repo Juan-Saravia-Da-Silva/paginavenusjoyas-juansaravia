@@ -4,68 +4,16 @@
 @import "./footer";
 @import "./resposive";
 
-ul{
-  li{
-    display: inline-block;
-    margin: 5px;
-    padding: 30px;
-    font-size: 1.5rem;
-  }
+
+/*# sourceMappingURL=estilo.css.map */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $font-family_1;
+	text-align: center;
 }
-.nav-link{
-    color: black;
-    margin: 30px;
-    :hover{
-      color: #4c2dd3;
-      transition: 1s;
-    }
-}
-article{
-  div{
-    p{
-      font-size: 1rem;
-      line-height: 2;
-      color: black;
-      background-image: linear-gradient(pink, white);
-      margin-bottom: 20px;
-      margin-left: 30px;
-      margin-right: 30px;
-      text-align: center;
-    }
-  }
-}
-.card {
-  @extend %card;
-  background-color: #12203e; 
-  color: antiquewhite;
-  height: 200rem;
-}
-  .navDeProductos section ul {
-    text-decoration: solid white;
-  }
-  .formulario {
-    margin: 20px 30px 30px 30px;
-  }
-  
-  .card2 {
-    display: inline-flex;
-    opacity: 60%;
-  
-    &:hover {
-      opacity: 1;
-    }
-  }
-  
-  .dondecomprar {
-    margin: 50px;
-    padding: 50px;
-  }
-  
-  .btn {
-    background-color: #12203e;
-    border: none;
-  }
-  .lupa{
-    height: 40px;
-    width: 40px;
-}
+
+
+
+
